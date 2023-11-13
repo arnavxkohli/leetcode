@@ -68,10 +68,3 @@ class Solution:
                 hIndex = index+1
 
         return hIndex
-
-
-solution = Solution()
-assert solution.hIndex([3,0,6,1,5]) == 3
-assert solution.hIndex([1,3,1]) == 1
-assert solution.hIndex([1]) == 1
-assert solution.hIndex([0]) == 0

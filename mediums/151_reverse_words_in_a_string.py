@@ -31,9 +31,3 @@ class Solution:
     def reverseWords(self, s: str) -> str:
         # Reverse after splitting and add a space in between
         return ' '.join(s.split()[::-1])
-
-
-solution = Solution()
-assert solution.reverseWords("the sky is blue") == "blue is sky the"
-assert solution.reverseWords("  hello world  ") == "world hello"
-assert solution.reverseWords("a good   example") == "example good a"

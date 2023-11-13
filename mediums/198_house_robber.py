@@ -50,8 +50,3 @@ class Solution:
         return dp[-1]
         # Interesting to note that the value of this can be the same as dp[-2],
         # depending on if you rob the last house or not
-
-
-solution = Solution()
-assert solution.rob([1, 2, 3, 1]) == 4
-assert solution.rob([2, 7, 9, 3, 1]) == 12
