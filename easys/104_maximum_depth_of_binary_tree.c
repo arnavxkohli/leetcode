@@ -10,3 +10,19 @@
 // Example 2:
 // Input: root = [1,null,2]
 // Output: 2
+#include <stddef.h>
+
+struct TreeNode{
+    int val;
+    struct TreeNode *left;
+    struct TreeNode *right;
+};
+
+int maxDepth(struct TreeNode *head){
+    if(head == NULL) return 0;
+
+    int leftDepth = 1 + maxDepth(head->left);
+    int rightDepth = 1 + maxDepth(head->right);
+
+    return (leftDepth > rightDepth) ? leftDepth : rightDepth;
+}
